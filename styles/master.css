@@ -1,0 +1,23 @@
+:root {
+    --shadow: 5px 5px 8px #1115;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/isopod.jpg");
+}
+
+.content {
+    background-color: #fff5;
+    border: none;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
