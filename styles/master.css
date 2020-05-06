@@ -12,7 +12,7 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     background-image: url("../img/isopod.jpg");
 }
 
