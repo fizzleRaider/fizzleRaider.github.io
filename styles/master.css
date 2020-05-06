@@ -17,9 +17,13 @@ body {
 }
 
 .content {
-    padding: 10px;
     background-color: #fff5;
     border: none;
     border-radius: 8px;
     box-shadow: var(--shadow);
+}
+
+h1 {
+    margin: 5px;
+    font-family: sans-serif;
 }
