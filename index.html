@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/styles/home.css">
     <title>Fizzle Raider</title>
 </head>
@@ -13,13 +14,45 @@
         <div class="nav-bar-item"><a href="#video">Videos</a></div>
         <div class="nav-bar-item"><a href="#music">Music</a></div>
         <div class="nav-bar-item"><a href="#design">UI/UX</a></div>
+        <div class="nav-bar-item"><a href="#contact">Contact</a></div>
     </div>
 
-    <section class="home">
+    <section class="home" id="home">
         <h1>Fizzle Raider</h1>
         <p>Video Editor, Music Producer, and UI/UX Designer/Developer</p>
         <div class="button-outline"><a href="#video">MY WORK</a></div>
         <div class="button-filled"><a href="#contact">CONTACT</a></div>
+    </section>
+
+    <section class="video" id="music">
+        <h1>Video Production</h1>
+        <p>Editing, Special Effects.</p>
+        <div class="button-outline"><a href="https://youtube.com/channels/UCYTvI5a3O1bug8q6Yi70bUw" target="_blank" rel="noopener noreferrer">YouTube</a></div>
+        <div class="button-outline"><a href="https://odysee.com/@fizzleRaider_" target="_blank" rel="noopener noreferrer">Odysee</a></div>
+    </section>
+
+    <section class="music" id="music">
+        <h1>Music Production</h1>
+        <p>Original Compositions.</p>
+    </section>
+
+    <section class="design" id="design">
+        <h1>Web Development</h1>
+        <p>UI/UX Design, Web Delopment, and Software Development.</p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1>Contact Me!</h1>
+        <div class="form">
+            <form action="" method="post">
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" placeholder="Title">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Type Here:"></textarea>
+            </form>
+        </div>
     </section>
     
     <script src="main.js"></script>
