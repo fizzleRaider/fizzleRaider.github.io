@@ -48,7 +48,6 @@ a:hover {
 
 section {
   height: 100vh;
-  padding: 5em;
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -58,9 +57,15 @@ section {
 }
 
 .home {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  position: relative;
+  display: grid;
+  grid-template-columns: 5% 45% 45% 5%;
+}
+.content {
+  grid-column: 2;
+}
+.banner {
+  grid-column: 3 / span 2;
 }
 .home .links {
   font-weight: bold;
@@ -75,5 +80,26 @@ section {
 img {
   height: 100vh;
   width: 50vw;
-  clip-path: ellipse(50% 50% at 100% 50%);
+  clip-path: ellipse(50% 50% at 50% 50%)
+             inset(0% 0% 0% 50%);
+}
+
+.button {
+  margin: 1em; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: auto;
+  width: fit-content;
+}
+.button-outline {
+  padding: 5px;
+  background-color: transparent;
+  color: var(--fg-color);
+  border: var(--fg-color) solid 1px;
+}
+.button-filled {
+  padding: 5px;
+  background-color: var(--fg-color);
+  color: var(--bg-color);
 }
