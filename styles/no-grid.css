@@ -16,6 +16,7 @@ body {
   width: 100%;
   background: var(--bg-color);
   color: var(--fg-color);
+  overflow-x: hidden;
 }
 
 a {
@@ -25,7 +26,7 @@ a {
 a:visited {
   color: var(--fg-color);
 }
-:hover {
+a:hover {
   text-decoration: underline;
 }
 
@@ -44,8 +45,30 @@ a:visited {
 section {
   height: 100vh;
   padding: 5em;
+  text-decoration: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
+}
+
+.home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.home .links {
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.banner {
+  height: 100vh;
+  width: 50vw;
+  clip-path: ellipse(50% 50% at 100% 50%);
 }
