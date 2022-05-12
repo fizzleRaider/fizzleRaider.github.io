@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 1080">
+    <defs>
+        <style>.a{fill:none;}</style>
+    </defs>
+    <clipPath id="svgPath">
+        <path class="a" d="M1020,0V1080H540C241.77,1080,0,838.23,0,540S241.77,0,540,0Z"/>
+    </clipPath>
+</svg>

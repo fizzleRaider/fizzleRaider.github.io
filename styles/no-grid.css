@@ -20,8 +20,12 @@ body {
   overflow-x: hidden;
 }
 
+svg {
+  position: absolute;
+}
+
 div {
-  border: dotted 2px cyan;
+  /* border: dotted 2px cyan; */
 }
 
 a {
@@ -37,9 +41,12 @@ a:hover {
 
 .nav-bar {
   height: 3.7em;
-  width: 50%;
+  width: 60%;
   padding: 1em;
-  background: var(--bg-color);
+  font-size: 2em;
+  font-weight: 10;
+  color: #fffc;
+  background: transparent;
   display: flex;
   flex-direction: row;
   justify-content:space-around;
@@ -54,7 +61,7 @@ section {
   flex-direction: column;
   justify-content: center;
   position: relative;
-  border: 1px red dotted;
+  /* border: 1px red dotted; */
 }
 
 .home {
@@ -62,7 +69,15 @@ section {
   display: grid;
   grid-template-columns: 5% 45% 45% 5%;
 }
-.content {
+.home h1 {
+  font-size: 7em;
+  font-weight: bold;
+}
+.home p {
+  font-size: 3em;
+  font-weight: lighter;
+}
+.home .content {
   grid-column: 2;
 }
 .banner {
@@ -81,16 +96,17 @@ section {
 img {
   height: 100vh;
   width: 50vw;
-  clip-path: /* inset(0% 0% 0% 50%), */ ellipse(50% 50% at 50% 50%);
+  clip-path: url(#svgPath);
 }
 
 .button {
-  margin: 1em; 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: auto;
   width: fit-content;
+  border: var(--fg-color) solid 1px;
+  cursor: pointer;
 }
 .button-outline {
   padding: 5px;
