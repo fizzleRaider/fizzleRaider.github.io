@@ -24,7 +24,10 @@ body {
 }
 
 svg {
+  height: auto;
+  width: auto;
   position: absolute;
+  background-size: cover;
 }
 
 div {
@@ -37,22 +40,24 @@ a {
 }
 a:visited {
   color: var(--fg-color);
+  text-decoration: none;
 }
 a:hover {
   text-decoration: underline;
 }
 
 .nav-bar {
+  left: 4vw;
   height: 3.7em;
-  width: 60%;
+  width: 55%;
   padding: 1em;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 10;
   color: var(--fg-color);
   background: transparent;
   display: flex;
   flex-direction: row;
-  justify-content:space-around;
+  justify-content: space-between;
   position: fixed;
   z-index: 1;
 }
@@ -83,7 +88,9 @@ section {
 .home .content {
   grid-column: 2;
 }
-.banner {
+.demo {
+  height: auto;
+  width: auto;
   grid-column: 3 / span 2;
 }
 .home .links {
@@ -97,28 +104,46 @@ section {
 }
 
 img {
-  height: 100vh;
+  height: 100%;
   width: 50vw;
   clip-path: url(#svgPath);
+  background-size: cover;
+  background-repeat: no-repeat;
+  image-resolution: from-image;
+  background-position: right;
 }
 
 .button {
+  height: auto;
+  width: 60%;
+  margin: 2em 0;
+  font-size: 1.3em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: auto;
-  width: fit-content;
-  border: var(--fg-color) solid 1px;
-  cursor: pointer;
 }
 .button-outline {
-  padding: 5px;
+  padding: 5px 2em;
   background-color: transparent;
   color: var(--fg-color);
   border: var(--fg-color) solid 1px;
 }
 .button-filled {
-  padding: 5px;
+  padding: 5px 2em;
+  color: var(--bg-color);
   background-color: var(--fg-color);
   color: var(--bg-color);
+}
+.button a {
+  font-weight: bold;
+  text-decoration: none;
+}
+a .button-outline:hover {
+  background-color: var(--fg-color);
+  color: var(--bg-color);
+  transition: 0.5s;
+}
+.button-filled:hover {
+  box-shadow: 0px 0px 1em 0px #d1d3d46e;
+  transition: 0.1s;
 }

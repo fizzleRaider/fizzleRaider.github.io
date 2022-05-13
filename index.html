@@ -11,7 +11,7 @@
 <body>
     <div class="nav-bar">
         <a href="#home"><div class="nav-bar-item">Home</div></a>
-        <a href="#video"><div class="nav-bar-item">Video</div></a>
+        <a href="#video"><div class="nav-bar-item">Videos</div></a>
         <a href="#music"><div class="nav-bar-item">Music</div></a>
         <a href="#design"><div class="nav-bar-item">UI/UX</div></a>
         <a href="#contact" style="display: none"><div class="nav-bar-item">Contact</div></a>
@@ -28,18 +28,18 @@
         </div>
         <div class="demo">
             <img src="/img/Banner.png" alt="really cool animation">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 1080">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
                 <defs>
-                    <style>.a{fill:none;}</style>
+                    <clipPath id="svgPath">
+                        <circle cx="150%" cy="255%" r="170%" />
+                        <rect x="160%" y="0%" width="200%" height="600%" />
+                    </clipPath>
                 </defs>
-                <clipPath id="svgPath">
-                    <path class="a" d="M1020,0V1080H540C241.77,1080,0,838.23,0,540S241.77,0,540,0Z"/>
-                </clipPath>
             </svg>
         </div>
     </section>
 
-    <section class="video" id="music">
+    <section class="video" id="video">
         <h1>Video Production</h1>
         <p>Editing, Special Effects.</p>
         <div class="button-outline"><a href="https://youtube.com/channels/UCYTvI5a3O1bug8q6Yi70bUw" target="_blank" rel="noopener noreferrer">YouTube</a></div>
@@ -53,7 +53,7 @@
 
     <section class="design" id="design">
         <h1>Web Development</h1>
-        <p>UI/UX Design, Web Delopment, and Software Development.</p>
+        <p>UI/UX Design, Web Development, and Software Development.</p>
     </section>
 
     <section class="contact" id="contact">
