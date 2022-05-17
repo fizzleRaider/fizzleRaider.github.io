@@ -20,7 +20,7 @@ body {
   width: 100%;
   background: var(--bg-color);
   color: var(--fg-color);
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 svg {
@@ -30,9 +30,7 @@ svg {
   background-size: cover;
 }
 
-div {
-  border: dotted 2px cyan;
-}
+div { border: dotted 2px cyan; }
 
 a {
   color: var(--fg-color);
@@ -42,12 +40,11 @@ a:visited {
   color: var(--fg-color);
   text-decoration: none;
 }
-a:hover {
-  text-decoration: underline;
-}
+
+/* NAVBAR */
 
 .nav-bar {
-  left: 4vw;
+  left: 3.5vw;
   height: 3.7em;
   width: 55%;
   padding: 1em;
@@ -61,6 +58,15 @@ a:hover {
   position: fixed;
   z-index: 1;
 }
+a .nav-bar-item {
+  height: auto;
+  width: auto;
+  padding: 4px;
+}
+a .nav-bar-item:hover {
+  border-bottom: var(--fg-color) solid 1px;
+  transition: all 1s;
+}
 
 section {
   height: 100vh;
@@ -71,6 +77,8 @@ section {
   position: relative;
   border: 1px red dotted;
 }
+
+/* HOME SECTION */
 
 .home {
   position: relative;
@@ -106,7 +114,8 @@ section {
 
 img {
   height: 100%;
-  width: 50vw;
+  max-width: 100%;
+  grid-column: 2 / span 2;
   clip-path: url(#svgPath);
   background-size: cover;
   background-repeat: no-repeat;
@@ -149,10 +158,23 @@ a .button-outline:hover {
   transition: 0.1s;
 }
 
+/* VIDEO SECTION */
+
 .video {
   display: grid;
   grid-template-columns: 5% 45% 45% 5%;
 }
 .video .content {
+  top: 0;
+  left: 0;
+  position: absolute;
   grid-column: 2 / span 2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.video video {
+  position: absolute;
+  grid-column: span;
 }
