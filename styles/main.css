@@ -30,7 +30,7 @@ svg {
   background-size: cover;
 }
 
-div { border: dotted 2px cyan; }
+/* div { border: dotted 2px cyan; } */
 
 a {
   color: var(--fg-color);
@@ -167,6 +167,8 @@ a .button-outline:hover {
 .video .content {
   top: 0;
   left: 0;
+  width: auto;
+  height: auto;
   position: absolute;
   grid-column: 2 / span 2;
   display: flex;
@@ -175,6 +177,21 @@ a .button-outline:hover {
   align-items: center;
 }
 .video video {
+  height: auto;
+  width: 100vw;
   position: absolute;
-  grid-column: span;
+  grid-column: 1 / span 3;
+}
+
+.home h1 {
+  font-size: 7em;
+  font-weight: bold;
+  line-height: 1em;
+}
+.home p {
+  font-size: 3em;
+  font-weight: lighter;
+}
+.home .content {
+  grid-column: 2;
 }
