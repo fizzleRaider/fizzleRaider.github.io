@@ -9,6 +9,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--font);
+  scroll-behavior: smooth;
 }
 
 html {
@@ -30,7 +31,7 @@ svg {
   background-size: cover;
 }
 
-/* div { border: dotted 2px cyan; } */
+div { border: dotted 2px cyan; }
 
 a {
   color: var(--fg-color);
@@ -209,13 +210,13 @@ a .button-outline:hover {
 }
 .video  .youtube:hover {
   color: var(--fg-color);
-  background-color: #A50000;
-  transition: 0.3s;
+  background: #A50000;
+  transition: background 0.3s;
 }
 .video .odysee:hover {
   color: var(--fg-color);
   background: linear-gradient(135deg, #F0236A, #F99129);
-  transition: 0.3s;
+  transition: background 0.3s;
 }
 
 /* MUSIC SECTION */
@@ -223,4 +224,10 @@ a .button-outline:hover {
 .music {
   display: grid;
   grid-template-columns: 5% 45% 45% 5%;
+}
+.music .music-player {
+  grid-column: 3 / span 2;
+}
+.music .content {
+  grid-column: 2;
 }
