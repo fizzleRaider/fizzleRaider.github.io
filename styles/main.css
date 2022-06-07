@@ -222,12 +222,24 @@ a .button-outline:hover {
 /* MUSIC SECTION */
 
 .music {
-  display: grid;
-  grid-template-columns: 5% 45% 45% 5%;
-}
-.music .music-player {
-  grid-column: 3 / span 2;
+	display: grid;
+	grid-template-columns: 5% 45% 45% 5%;
 }
 .music .content {
-  grid-column: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	grid-column: 2;
+}
+.music h1 {
+	font-size: 7em;
+	font-weight: bold;
+	line-height: 1em;
+}
+.music p {
+	font-size: 3em;
+	font-weight: lighter;
+}
+.music-player {
+	grid-column: 3;
 }
