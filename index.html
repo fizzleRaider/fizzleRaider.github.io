@@ -17,6 +17,16 @@
         <a href="#contact" style="display: none"><div class="nav-bar-item">Contact</div></a>
     </div>
 
+    <div class="sidebar">
+        <svg xmlns="http://www.w3.org/2000/svg">
+            <a href="#home"><circle class="circle" /></a>
+            <a href="#video"><circle class="circle" /></a>
+            <a href="#music"><circle class="circle" /></a>
+            <a href="#design"><circle class="circle" /></a>
+            <a href="#contact"><circle class="circle" /></a>
+        </svg>
+    </div>
+
     <section class="home" id="home">
         <div class="content">
             <h1>Fizzle Raider</h1>
@@ -55,14 +65,18 @@
     </section>
 
     <section class="music" id="music">
-        <div class="music-player">
-            <audio controls>
-                <source src="/media/audio/Darklight.wav">
-            </audio>
-        </div>
         <div class="content">
             <h1>Music Production</h1>
             <p>Original Compositions.</p>
+        </div>
+        <div class="music-player">
+            <div class="music-controls">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg">
+                        <polygon points="1,100 200,100 150,200" style="fill: #fff;" />
+                    </svg>
+                </button>
+            </div>
         </div>
     </section>
 
