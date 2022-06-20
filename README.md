@@ -4,4 +4,4 @@
 I am a Web Designer/Developer, Video Editor, and Music Producer.
 
 #### How can I get in touch with you?
-DM me on Twitter
+DM me on [~~Twitter~~](https://twitter.com/fizzleraider)

@@ -12,14 +12,11 @@
   scroll-behavior: smooth;
 }
 
-html {
-  font-size: 12pt;
-}
-
 body {
   height: 500vh;
   width: 100%;
   background: var(--bg-color);
+  font-size: 12pt;
   color: var(--fg-color);
   overflow-x: hidden;
 }
@@ -31,7 +28,7 @@ svg {
   background-size: cover;
 }
 
-div { border: dotted 2px cyan; }
+/* div { border: dotted 2px cyan; } */
 
 a {
   color: var(--fg-color);
@@ -47,7 +44,7 @@ a:visited {
 .nav-bar {
   left: 3.5vw;
   height: 3.7em;
-  width: 58%;
+  width: 75%;
   padding: 1em;
   font-size: 1.5em;
   font-weight: 10;
@@ -58,6 +55,9 @@ a:visited {
   justify-content: space-between;
   position: fixed;
   z-index: 2;
+}
+.nav-bar a:last-child {
+  visibility: hidden;
 }
 a .nav-bar-item {
   height: auto;
@@ -76,19 +76,30 @@ a .nav-bar-item:hover {
   width: 5%;
   height: 100%;
   position: fixed;
-  left: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: solid #A50000 2px;
+  /* border: solid #A50000 2px; */
   z-index: 1;
+}
+.sidebar svg {
+  width: fit-content;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .sidebar circle {
   fill: var(--fg-color);
-  x: 10%;
-  y: 10%;
-  r: 10%;
+  cx: 50%;
+  r: 5%;
+  transition: 0.25s;
+}
+.sidebar circle:hover {
+  r: 8%;
 }
 
 section {
@@ -98,7 +109,7 @@ section {
   flex-direction: column;
   justify-content: center;
   position: relative;
-  border: 1px red dotted;
+  /* border: 1px red dotted; */
 }
 
 /* HOME SECTION */
@@ -164,12 +175,14 @@ img {
   background-color: transparent;
   color: var(--fg-color);
   border: var(--fg-color) solid 1px;
+  transition: 0.5s;
 }
 .button-filled {
   padding: 5px 2em;
   color: var(--bg-color);
   background-color: var(--fg-color);
   color: var(--bg-color);
+  transition: 0.2s;
 }
 .buttons a {
   font-weight: bold;
@@ -178,11 +191,9 @@ img {
 a .button-outline:hover {
   background-color: var(--fg-color);
   color: var(--bg-color);
-  transition: 0.5s;
 }
 .button-filled:hover {
   box-shadow: 0px 0px 1em 0px #d1d3d46e;
-  transition: 0.1s;
 }
 
 /* VIDEO SECTION */
@@ -216,7 +227,7 @@ a .button-outline:hover {
   text-align: right;
 }
 .video p {
-  width: 100%;
+  width: auto;
   font-size: 3em;
   font-weight: lighter;
   text-align: right;
@@ -229,7 +240,7 @@ a .button-outline:hover {
   justify-content: right;
   column-gap: 4em;
 }
-.video  .youtube:hover {
+.video .youtube:hover {
   color: var(--fg-color);
   background: #A50000;
   transition: background 0.3s;
@@ -272,4 +283,36 @@ a .button-outline:hover {
   font-size: 3em;
   font-weight: lighter;
   text-align: left;
+}
+
+/* DESIGN SECTION */
+
+.design {
+  display: grid;
+  grid-template-columns: 5% 45% 45% 5%;
+}
+.design .content {
+  width: auto;
+  grid-column: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1em;
+}
+.design h1 {
+  font-size: 7em;
+  font-weight: bolder;
+  line-height: 1em;
+  text-align: right;
+}
+.design p {
+  text-align: right;
+}
+
+/* CONTACT FORM */
+
+.contact {
+  display: grid;
+  grid-template-columns: 5% 45% 45% 5%;
 }

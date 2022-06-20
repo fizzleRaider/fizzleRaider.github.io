@@ -13,17 +13,17 @@
         <a href="#home"><div class="nav-bar-item">Home</div></a>
         <a href="#video"><div class="nav-bar-item">Videos</div></a>
         <a href="#music"><div class="nav-bar-item">Music</div></a>
-        <a href="#design"><div class="nav-bar-item">UI/UX</div></a>
-        <a href="#contact" style="display: none"><div class="nav-bar-item">Contact</div></a>
+        <a href="#design"><div class="nav-bar-item">Design</div></a>
+        <a href="#contact"><div class="nav-bar-item">Contact</div></a>
     </div>
 
     <div class="sidebar">
         <svg xmlns="http://www.w3.org/2000/svg">
-            <a href="#home"><circle class="circle" /></a>
-            <a href="#video"><circle class="circle" /></a>
-            <a href="#music"><circle class="circle" /></a>
-            <a href="#design"><circle class="circle" /></a>
-            <a href="#contact"><circle class="circle" /></a>
+            <a href="#home"><circle cy="10%" class="circle" /></a>
+            <a href="#video"><circle cy="30%" class="circle" /></a>
+            <a href="#music"><circle cy="50%" class="circle" /></a>
+            <a href="#design"><circle cy="70%" class="circle" /></a>
+            <a href="#contact"><circle cy="90%" class="circle" /></a>
         </svg>
     </div>
 
@@ -39,7 +39,6 @@
         <div class="demo">
             <img src="/img/Banner.png" alt="really cool animation">
             <svg xmlns="http://www.w3.org/2000/svg" >
-            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" > -->
                 <defs>
                     <clipPath id="svgPath">
                         <circle cx="150%" cy="255%" r="170%" />
@@ -71,18 +70,25 @@
         </div>
         <div class="music-player">
             <div class="music-controls">
-                <button>
-                    <svg xmlns="http://www.w3.org/2000/svg">
-                        <polygon points="1,100 200,100 150,200" style="fill: #fff;" />
-                    </svg>
-                </button>
+                <svg xlmns="http://w3.org/2000/svg" >
+                    <button name="play">
+                        <polygon points="1,100 200,100 150,200" />
+                    </button>
+                </svg>
             </div>
         </div>
     </section>
 
     <section class="design" id="design">
-        <h1>Web Development</h1>
-        <p>UI/UX Design, Web Development, and Software Development.</p>
+        <div class="content">
+            <h1>Web Development</h1>
+            <p>UI/UX Design, Web Development, and Software Development.</p>
+        </div>
+        <div class="badges">
+            <img src="./img/badges/html.png" alt="HTML5">
+            <img src="./img/badges/css.png" alt="CSS3">
+            <img src="./img/badges/js.png" alt="JavaScript">
+        </div>
     </section>
 
     <section class="contact" id="contact">
