@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/main.css">
+    <title>Fizzle Raider</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="#home"><div class="nav-bar-item">Home</div></a>
+        <a href="#video"><div class="nav-bar-item">Videos</div></a>
+        <a href="#music"><div class="nav-bar-item">Music</div></a>
+        <a href="#design"><div class="nav-bar-item">Design</div></a>
+        <a href="#contact"><div class="nav-bar-item">Contact</div></a>
+    </div>
+
+    <div class="sidebar">
+        <svg xmlns="http://www.w3.org/2000/svg">
+            <a href="#home"><circle cy="10%" class="circle" /></a>
+            <a href="#video"><circle cy="30%" class="circle" /></a>
+            <a href="#music"><circle cy="50%" class="circle" /></a>
+            <a href="#design"><circle cy="70%" class="circle" /></a>
+            <a href="#contact"><circle cy="90%" class="circle" /></a>
+        </svg>
+    </div>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h1>Fizzle Raider</h1>
+            <p>Video Editor, Music <br> Producer, and UI/UX Designer/Developer.</p>
+            <div class="buttons">
+                <a href="#video"><div class="button-outline">MY WORK</div></a>
+                <a href="#contact"><div class="button-filled">CONTACT</div></a>
+            </div>
+        </div>
+        <div class="demo">
+            <img src="/img/Banner.png" alt="really cool animation">
+            <svg xmlns="http://www.w3.org/2000/svg" >
+                <defs>
+                    <clipPath id="svgPath">
+                        <circle cx="150%" cy="255%" r="170%" />
+                        <rect x="160%" y="0%" width="200%" height="600%" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+    </section>
+
+    <section class="video" id="video">
+        <div class="video-player">
+            <video src="/media/video/Nice[1].mp4" loop autoplay></video>
+        </div>
+        <div class="content">
+            <h1>Video Production</h1>
+            <p>Editing, Special Effects.</p>
+            <div class="buttons">
+                <a href="https://youtube.com/channels/UCYTvI5a3O1bug8q6Yi70bUw" target="_blank" rel="noopener noreferrer"><div class="button-outline youtube">YouTube</div></a>
+                <a href="https://odysee.com/@fizzleRaider_" target="_blank" rel="noopener noreferrer"><div class="button-outline odysee">Odysee</div></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="music" id="music">
+        <div class="content">
+            <h1>Music Production</h1>
+            <p>Original Compositions.</p>
+        </div>
+        <div class="music-player">
+            <div class="music-controls">
+                <svg xlmns="http://w3.org/2000/svg" >
+                    <button name="play">
+                        <polygon points="1,100 200,100 150,200" />
+                    </button>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section class="design" id="design">
+        <div class="content">
+            <h1>Web Development</h1>
+            <p>UI/UX Design, Web Development, and Software Development.</p>
+        </div>
+        <div class="badges">
+            <img src="./img/badges/html.png" alt="HTML5">
+            <img src="./img/badges/css.png" alt="CSS3">
+            <img src="./img/badges/js.png" alt="JavaScript">
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1>Contact Me!</h1>
+        <div class="form">
+            <form action="" method="post">
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" placeholder="Title">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Type Here:"></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </section>
+
+    <section class="footer">
+        <a href="https://instagram.com/fizzleraider" target="_blank" rel="noopener noreferrer"><span class="quick-link">Instagram</span></a>
+        <a href="https://gab.com/fizzleraider" target="_blank" rel="noopener noreferrer"><span class="quick-link">Gab</span></a>
+        <a href="https://twitter.com/fizzleraider" target="_blank" rel="noopener noreferrer"><span class="quick-link">Twitter</span></a>
+    </section>
+    
+    <script src="./js/main.js"></script>
+</body>
+</html>
